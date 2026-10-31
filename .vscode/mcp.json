@@ -1,0 +1,36 @@
+{
+	"servers": {
+		"jira": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"@atlassian/mcp"
+			],
+			"env": {
+				"JIRA_URL": "https://your-company.atlassian.net",
+				"JIRA_EMAIL": "you@example.com",
+				"JIRA_API_TOKEN": "your-jira-api-token"
+			},
+			"type": "stdio"
+		},
+		"github": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"@modelcontextprotocol/server-github"
+			],
+			"env": {
+				"GITHUB_PERSONAL_ACCESS_TOKEN": "your-github-token"
+			},
+			"type": "stdio"
+		},
+		"playwright": {
+			"command": "npx",
+			"args": [
+				"@playwright/mcp@latest"
+			],
+			"type": "stdio"
+		}
+	},
+	"inputs": []
+}
